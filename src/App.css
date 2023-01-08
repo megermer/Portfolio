@@ -1,0 +1,169 @@
+:root {
+  /* FONT SETTINGS */
+  --main-font: 'Nunito', sans-serif;
+  --font-size-paragraph: 23px;
+  --font-size-header: 50px;
+  /* COLOR SETTINGS */
+  --main-black: #181A18;
+  --pink: #DBB1BC;
+  --lavendar: #D3C4E3;
+  --periwinkle: #8F95D3;
+  --blue: #89DAFF;
+  --umber: #58504A;
+  --soft-white: #d9d9d9;
+  /* SIZE SETTINGS */
+  --big-rectangle-width: 350px;
+  --medium-rectangle-width: 275px;
+  --small-rectangle-width: 200px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  margin: 0px;
+  background-color: var(--main-black);
+}
+
+/* NAV BAR STYLING */
+.navBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 76px;
+  margin: 0px;
+  padding: 20px 100px;
+}
+
+.navBarList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navBarListItem a {
+  padding: 15px;
+  text-decoration: none;
+  color: var(--soft-white);
+  font-family: var(--main-font);
+  font-size: var(--font-size-paragraph);
+}
+
+.navBarListItem:nth-child(2) {
+  margin-left: 250px;
+}
+
+/* HERO STYLING */
+
+.heroContainer {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  padding: 10px;
+}
+
+.rowContainer {
+  width: fit-content;
+  height: fit-content;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.box {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box p {
+  font-family: var(--main-font);
+  font-size: var(--font-size-header);
+  color: var(--soft-white);
+}
+
+.pink {
+  background-color: var(--pink);
+}
+
+.blue {
+  background-color: var(--blue);
+}
+
+.lavendar {
+  background-color: var(--lavendar);
+}
+
+.periwinkle {
+  background-color: var(--periwinkle);
+}
+
+.big {
+  width: var(--big-rectangle-width)
+}
+
+.medium {
+  width: var(--medium-rectangle-width)
+}
+
+.small {
+  width: var(--small-rectangle-width)
+}
+
+/* ARTICLES STYLING */
+
+.articleContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 845px;
+  margin: auto;
+  padding: 10px;
+  color: var(--soft-white);
+  font-family: var(--main-font);   
+}
+
+.articleHeader {
+  font-size: var(--font-size-header);
+}
+
+.articlePar {
+  font-size: var(--font-size-paragraph);
+}
+
+/* ABOUT ME ARTICLE*/
+.aboutMeHeader {
+  color: var(--periwinkle);
+}
+
+.firstParAndImgContainer {
+  display: flex;
+}
+
+.aboutMeImg {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+/* SKILLS ARTICLE */
+.skillsHeader {
+  color: var(--lavendar);
+}
+
+.skillsListHeader {
+  margin-bottom: 5px;
+}
+
+.skillsList {
+  margin: 0;
+}
+
+/* EXPERIENCE HEADER */
+.experienceHeader {
+  color: var(--pink);
+}
